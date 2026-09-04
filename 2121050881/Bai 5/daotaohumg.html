@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đào tạo HUMG</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .menu{
+            background-color: #2fa4e7;
+
+        }
+        .danh-sach-muc{
+            list-style: none;
+            margin: 0px;
+            display: flex;
+        }
+        .muc{
+            color: white;
+            /* background-color: red; */
+            padding: 15px;
+            /* font-weight: bold; */
+        }
+        a{
+            color: white;
+            /* để bỏ gạch chân trong thẻ a dùng text-decoration */
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai{
+            background-color: blue;
+            width: 20%;
+            height: 500px;
+        }
+        .khoi-phai{
+            background-color: green;
+            width: 80%;
+            height: 500px;
+        }
+        .dang-nhap{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+        }
+        form{
+            /* background-color: pink; */
+        }
+        p{
+            margin: 0px;
+        }
+        button{
+            width: 100%;
+            padding: auto;
+            /* margin: 10px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh menu -->
+        <nav class="menu">
+            <ul class="danh-sach-muc">
+                <li class="muc"><a href="#">Thực tập, Đồ án</a></li>
+                <li class="muc"><a href="#">Thủ tục Một cửa</a></li>
+                <li class="muc"><a href="#">Một Cửa Online</a></li>
+                <li class="muc"><a href="#">E-mail HUMG</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="khoi-trai">Trái
+                <div class="dang-nhap">
+                    <form action="">
+                        <p>Tài khoản</p>
+                        <input type="text">
+                        <p>Password</p>
+                        <input type="password">
+                        <button>Đăng nhập</button>
+                        <button>Mật khẩu</button>
+                    </form>
+                </div>
+            </div>
+            <div class="khoi-phai">Phải</div>
+        </main>
+</body>
+</html>
