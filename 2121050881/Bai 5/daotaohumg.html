@@ -10,79 +10,167 @@
         }
         .menu{
             background-color: #2fa4e7;
+        }
+        
+        .danh-muc{
+            text-decoration: none;
+            color: white;
 
         }
+
         .danh-sach-muc{
             list-style: none;
             margin: 0px;
             display: flex;
+            gap: 15px ;
         }
-        .muc{
+        /* .muc{
             color: white;
             /* background-color: red; */
-            padding: 15px;
+            /* padding: 15px; */
             /* font-weight: bold; */
-        }
-        a{
-            color: white;
-            /* để bỏ gạch chân trong thẻ a dùng text-decoration */
-            text-decoration: none;
-        }
-        main{
+            /* gap set các đối tượng ở trong khối tự động cách nhau khoảng cách = giá trị truyền vào */
+            /* gap: 15x; */
+        /* } */ 
+        
+        main{  
             display: flex;
         }
         .khoi-trai{
-            background-color: blue;
+            /* background-color: blue; */
             width: 20%;
             height: 500px;
+            /* để vẽ viền cần sử dụng border  */
+            border-right: 1px solid #2fa4e7;
         }
         .khoi-phai{
-            background-color: green;
+            /* background-color: green; */
             width: 80%;
             height: 500px;
         }
-        .dang-nhap{
-            background-color: grey;
-            display: flex;
-            justify-content: center;
-        }
-        form{
-            /* background-color: pink; */
-        }
-        p{
+        /* .dang-nhap{ */
+            /* background-color: grey; */
+           /* display: flex;
+            justify-content: center; */
+            /* nếu margin để auto sẽ căn đối tượng ra giữa màn hình  */
+            /* margin: 10px auto; 
+        } */
+        /* .form{
+            background-color: pink; */
+        /* } */
+        .p{
             margin: 0px;
         }
-        button{
+        .button{
             width: 100%;
-            padding: auto;
-            /* margin: 10px; */
+            padding: 5px 0;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #2fa4e7;
         }
+
+        .lien-ket-quen-mat-khau{
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .thong-tin-dang-nhap{
+            width: 100%;
+            padding: 5px 0;
+            margin: auto;
+        }
+        .thong-tin{
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .dang-nhap{
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: #2fa4e7;
+            color: white;
+        }
+        .dang-nhap-365{
+            width: 100%;
+            margin-bottom: 10px;
+            background-color: blue;
+            color: white;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+        .tin{
+            width: 95%;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #2fa4e7;
+            border-radius: 10px;
+        }
+        .tin-tren{
+            width: 95%;
+            margin: auto;
+            border-bottom: 1px solid #2fa4e7;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .h3{
+            margin: 0;
+        }
+        
     </style>
 </head>
 <body>
     <!-- Thanh menu -->
         <nav class="menu">
             <ul class="danh-sach-muc">
-                <li class="muc"><a href="#">Thực tập, Đồ án</a></li>
-                <li class="muc"><a href="#">Thủ tục Một cửa</a></li>
-                <li class="muc"><a href="#">Một Cửa Online</a></li>
-                <li class="muc"><a href="#">E-mail HUMG</a></li>
+                <li class="muc"><a class="danh-muc" href="#">Thực tập, Đồ án</a></li>
+                <li class="muc"><a class="danh-muc" href="#">Thủ tục Một cửa</a></li>
+                <li class="muc"><a class="danh-muc" href="#">Một Cửa Online</a></li>
+                <li class="muc"><a class="danh-muc" href="#">E-mail HUMG</a></li>
             </ul>
         </nav>
         <main>
-            <div class="khoi-trai">Trái
-                <div class="dang-nhap">
+            <div class="khoi-trai">
+                <div class="thong-tin-dang-nhap">
                     <form action="">
+                        <div class="thong-tin">
                         <p>Tài khoản</p>
                         <input type="text">
+                        </div>
+                        <div class="thong-tin">
                         <p>Password</p>
                         <input type="password">
-                        <button>Đăng nhập</button>
-                        <button>Mật khẩu</button>
+                        </div>
+                        <div class="quen-mk">
+                            <i><a class="lien-ket-quen-mat-khau" href="#">Quên mật khẩu</a></i>
+                        </div>
+                        <div class="chuc-nang-dang-nhap">
+                            <button class="dang-nhap">Đăng nhập</button>
+                            <button class="dang-nhap-365">Đăng nhập 365</button>
+                        </div>
                     </form>
                 </div>
             </div>
-            <div class="khoi-phai">Phải</div>
+            <div class="khoi-phai">
+                <div class="tin">
+                    <!-- tin tức -->
+                    <div class="tin-tren">
+                        <h3 class="tieu-de">Tin tức</h3>
+                        <p><a class="xem-tiep" href="#">Xem tiếp</a></p>
+                    </div>
+                    <!-- danh sách tin -->
+                    <div class="danh-sach-tin">
+                        <div class=""></div>
+                        <p><a class="xem-tiep" href="#">Xem tiếp</a></p>
+                    </div>
+                    <div class="tin-tren">
+                        <h3 class="tieu-de">Tin tức</h3>
+                        <p><a class="xem-tiep" href="#">Xem tiếp</a></p>
+                    </div>
+                </div>
+                
+            </div>  
         </main>
 </body>
 </html>
