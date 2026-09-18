@@ -158,9 +158,8 @@ img {
     color: #2fa4e7;
     text-decoration: none;
 }
-.thong-bao{
-    width: 50%;
+.tin-ngang{
     display: flex;
-    justify-content: space-around;
-    border-right: 1px solid #2fa4e7;
+    flex-direction: column;
+    justify-content: flex-end;
 }

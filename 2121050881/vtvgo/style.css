@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+header{
+    display: flex;
+}
+.danh-muc{
+    background-color: red;
+}
+.danh{
+    margin: 0;
+    list-style: none;
+}
+
+.muc{
+    text-decoration: none;
+}
+
