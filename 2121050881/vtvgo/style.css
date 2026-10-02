@@ -1,21 +1,22 @@
 body{
-    background-color: black;
-    color: white;
     margin: 0;
 }
-
 header{
-    display: flex;
+    
 }
 .danh-muc{
-    background-color: red;
+    background-color: brown;
+    display: flex;
 }
-.danh{
-    margin: 0;
+.muc{
     list-style: none;
 }
-
-.muc{
-    text-decoration: none;
+.banner{
+    background-color: blue;
 }
-
+.avata{
+    background-color: blueviolet;
+}
+main{
+    
+}
