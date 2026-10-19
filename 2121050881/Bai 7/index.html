@@ -205,6 +205,66 @@
         else{
             document.writeln("hôm nay không phải là chủ nhật")
         }
+
+        //object: var name = { }
+        var thongTinSinhVien = {
+            hoTen: "Nguyễn Hoàng An",
+            tuoi: 22,
+            gioiTinh:true, // true: Nam, false: Nữ
+            diaChi: {
+                thanhPho: "Ha Noi",
+                phuong: "Dong Ngac",
+                duong: "Le Van Hien"
+            }
+        };
+
+        var thongTinPhim = {
+            tenPhim: "Lop hoc Web noi loan",
+            theLoai: "Học đường, KINH DỊ, Xuyên không",
+            thoiLuong: 270,
+            tacGia: "Đại học Mỏ-Địa chất",
+            daoDien:" Ngô Ngọc Anh",
+            dienVien:"Nguyễn Hoàng An,... và nhiều người khác",
+            nam: 2026,
+            ngayChieu:"Thứ 6 hàng tuần"
+        }
+        document.writeln("<br>");
+        document.writeln(thongTinPhim.daoDien);
+
+        //switch case
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5: 
+                document.writeln("Finally Friday");
+                break;
+            case 6: 
+                document.writeln("Super Saturday");
+                break;
+            case 0: 
+                document.writeln("Sleepy Sunday");
+                break;
+            default:
+                document.writeln("I'm looking forward to this weekend!");
+        }
+
+        for (var index = 1;index <= 2; index++) {
+            document.writeln("<br> Xin chào!" + index);
+        }
+
+        var danhSachSinhVien = ["Thuy","Mai","Tuan","Thang","Thao"];
+        document.writeln("<br> Xin chào!"+ danhSachSinhVien[0]);
+        for (var i=0;i < danhSachSinhVien.length; i++) {
+            document.writeln("<br>" + i +"<br>");
+            document.writeln("Xin chào" + danhSachSinhVien[i]);
+            if(danhSachSinhVien[i]=="Tuan" ||danhSachSinhVien=="Thuy"){
+                document.writeln("<br>");
+                document.writeln("Xin chào " + danhSachSinhVien[i]);
+            }
+        }
+
+
+        
      </script>
 
      <!-- External JavaScript -->
