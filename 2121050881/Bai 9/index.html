@@ -15,28 +15,28 @@
 </head>
 <body>
     <div class="khoi">
-        <h1>Chế độ sáng</9h1>
+        <h1>Chế độ sáng</h1>
         <img src="mattroi.png" alt="">
         <div>
-            <button onclick="doiCheDo">Đổi chế độ</button>
+            <button onclick="doiCheDo()">Đổi chế độ</button>
         </div>
     </div>
     <script>
-        var doiCheDo=true;
+        var doiCheDoHienTai=true;
         function doiCheDo(){
-            if(doiCheDo==true){
+            if(doiCheDoHienTai==true){
             document.getElementsByTagName("body")[0].style= "background-color: black";
             document.getElementsByTagName("h1")[0].innerHTML= "Chế độ tối";
             document.getElementsByTagName("h1")[0].style= "color: white";
             document.getElementsByTagName("img")[0].src= "mattrang.png";
-            doiCheDo = false;
+            doiCheDoHienTai = false;
             }
             else{
             document.getElementsByTagName("body")[0].style= "background-color: white";
             document.getElementsByTagName("h1")[0].innerHTML= "Chế độ sáng";
             document.getElementsByTagName("h1")[0].style= "color: black";
             document.getElementsByTagName("img")[0].src= "mattroi.png";
-            doiCheDo = true;
+            doiCheDoHienTai = true;
             }
         }
     </script>
