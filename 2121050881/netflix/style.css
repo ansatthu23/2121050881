@@ -70,6 +70,9 @@ header{
     justify-content: space-between;
 }
 
+.phim:hover{
+    background-color: grey;
+}
 .phim{
     width: 19%;
     /* height: 20vh; */
@@ -108,4 +111,7 @@ footer{
 
 .chan-trang{
     display: flex;
+}
+.p{
+    margin: auto;
 }
